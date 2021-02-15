@@ -4,7 +4,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    setWindowTitle(tr("Something Title"));
+    setWindowTitle(tr("Engineering Calculator"));
 
     createFormInterior();
 }
@@ -15,4 +15,5 @@ void MainWindow::createFormInterior()
 {
     normal_calculator = new Normal_calculator;
     setCentralWidget(normal_calculator);//у MainWindow есть встроенные паттерны виджетов, это центральный виджет
+
 }

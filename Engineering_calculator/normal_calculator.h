@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QBoxLayout>
+#include <QLabel>
 
 class Normal_calculator : public QWidget
 {
@@ -11,7 +12,15 @@ class Normal_calculator : public QWidget
 public:
     explicit Normal_calculator(QWidget *parent = nullptr);
 
-signals:
+public:
+    QList <QPushButton *> buttons;
+    QPushButton* createButton(const QString& str);
+
+public:
+    QLabel label;
+
+public slots:
+    void slotButtonClicked();
 
 };
 
