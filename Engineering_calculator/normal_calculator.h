@@ -17,7 +17,8 @@ public:
     QPushButton* createButton(const QString& str);
 
 public:
-    QLabel label;
+    QLabel firstLabel;
+    QLabel secondLabel;
 
 public slots:
     void slotButtonClicked();
